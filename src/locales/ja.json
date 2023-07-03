@@ -30,6 +30,11 @@
             "NoEmptyAllowedError": "空入力はできません!"
         },
         "Printers": "プリンター",
+        "TheServiceWorker": {
+            "DescriptionNeedUpdate": "ローカルキャッシュが古いため更新が必要です。 下のボタンを押してキャッシュを更新してください。",
+            "TitleNeedUpdate": "PWAは更新が必要です",
+            "Update": "更新"
+        },
         "ThrottledStates": {
             "DescriptionCurrentlyThrottled": "RasPi ARM コアはスロットル制御中です",
             "DescriptionFrequencyCapped": "RasPi ARM 最高周波数は1.2GHに制限されています",
@@ -179,7 +184,10 @@
         "DeleteDirectory": "ディレクトリの削除",
         "DeleteDirectoryQuestion": "ディレクトリ\"{name}\"と中に含まれるすべてのファイルが削除されます。よろしいですか？",
         "DeleteSelectedQuestion": "選択された {count}個のファイルを削除します。よろしいですか？",
+        "DeleteSingleFileQuestion": "\"{name}\"を削除します。よろしいですか?",
         "Download": "ダウンロード",
+        "Duplicate": "複製",
+        "DuplicateFile": "ファイルの複製",
         "EditFile": "ファイル編集",
         "Empty": "空",
         "ExtruderTemp": "エクストルーダー温度",
@@ -216,6 +224,8 @@
         "Rename": "名前変更",
         "RenameDirectory": "ディレクトリ名の変更",
         "RenameFile": "ファイル名の変更",
+        "ScanMeta": "メタデータの走査",
+        "ScanMetaSuccess": "{filename}からメタデータの走査に成功しました。",
         "Search": "検索",
         "SetupCurrentList": "一覧の設定",
         "Slicer": "スライサー",
@@ -280,6 +290,7 @@
         "Flat": "平面",
         "Heightmap": "高低マップ",
         "InvalidNameAlreadyExists": "プロファイル名は既に存在しています。違う名前をつけてください。",
+        "InvalidNameAscii": "Name is invalid. Only ascii character are allowed.",
         "InvalidNameEmpty": "名前の入力は空であってはなりません!",
         "InvalidNameReserved": "プロファイル名 'default' は予約されています。違う名前をつけてください。",
         "Later": "あとで",
@@ -311,6 +322,7 @@
         "Chart": "チャート",
         "Delete": "削除",
         "DeleteSelectedQuestion": "選択された {count}個のジョブを削除します。よろしいですか？",
+        "DeleteSingleJobQuestion": "ジョブを削除します。よろしいですか？",
         "Details": "詳細",
         "EditNote": "ノート編集",
         "Empty": "空",
@@ -398,7 +410,10 @@
             "DeleteDirectory": "ディレクトリ削除",
             "DeleteDirectoryQuestion": "ディレクトリ\"{name}\"と中に含まれるすべてのファイルが削除されます。よろしいですか？",
             "DeleteSelectedQuestion": "選択した {count}個を削除しますか？",
+            "DeleteSingleFileQuestion": "\"{name}\"を削除します。よろしいですか？",
             "Download": "ダウンロード",
+            "Duplicate": "複製",
+            "DuplicateFile": "ファイルの複製",
             "EditFile": "ファイル編集",
             "Empty": "空",
             "Files": "ファイル",
@@ -797,7 +812,10 @@
             "MoonrakerRestartInstance": "Moonraker インスタンスの再始動",
             "MoonrakerRestartInstanceDescription": "Moonrakerの設定ファイルを編集する際に'保存して再始動'で、どのMoonrakerサービスを再始動するか選択してください。",
             "UseEscToClose": "ESCキーでエディターを終了します。",
-            "UseEscToCloseDescription": "ESCキーでエディターを終了できます。"
+            "UseEscToCloseDescription": "ESCキーでエディターを終了できます。",
+            "TabSize": "TABの量",
+            "TabSizeDescription": "TAB時に半角スペース何個分インデントするか調整できます",
+            "Spaces": "半角スペース: {count}"
         },
         "GCodeViewerTab": {
             "BackgroundColor": "背景色",
@@ -910,6 +928,9 @@
             "UnableToLoadLight": "照明を読み込めませんでした。",
             "UnableToLoadPreset": "プリセットを読み込めませんでした。"
         },
+        "NavigationTab": {
+            "Navigation": "ナビゲーション"
+        },
         "PresetsTab": {
             "AddPreset": "プリセット追加",
             "Cooldown": "クールダウン",
@@ -1006,6 +1027,8 @@
             "VariableFpsMinDescription": ""
         },
         "UiSettingsTab": {
+            "BedScrewsDialog": "ベッドスクリューダイアログ",
+            "BedScrewsDialogDescription": "BED_SCREWS_ADJUSTのヘルパーダイアログを表示します",
             "BoolBigThumbnail": "大きなサムネイル",
             "BoolBigThumbnailDescription": "印刷中、状態パネルに大きなサムネイルを表示します。",
             "BoolHideUploadAndPrintButton": "アップロード＆印刷ボタンを隠す",
@@ -1014,6 +1037,8 @@
             "ConfirmOnEmergencyStopDescription": "緊急停止時に確認ダイアログを表示します。",
             "ConfirmOnPowerDeviceChange": "電源デバイス変更時の確認",
             "ConfirmOnPowerDeviceChangeDescription": "電源デバイス変更時に確認ダイアログを表示します。",
+            "DisableFanAnimation": "ファンアイコンのアニメーションの無効化",
+            "DisableFanAnimationDescription": "これによりブラウザの負荷を軽減できます。",
             "DisplayCANCEL_PRINT": "印刷取り消しの表示",
             "DisplayCANCEL_PRINTDescription": "印刷取り消しボタンを常に表示します - 2層目の確認不要",
             "GcodeThumbnails": "Gコードのサムネイル",
@@ -1026,6 +1051,8 @@
             "LockSlidersDelayDescription": "スライダーは一定時間後にロックされます。 0か空白のままに設定すると、スライダーはページの変更か再読み込み時のみロックされるようになります。",
             "LockSlidersDescription": "タッチスクリーンのスライダーは動かす前にロックを解除する必要があります。",
             "Logo": "ロゴ",
+            "ManualProbeDialog": "マニュアルプローブ ヘルパーダイアログ",
+            "ManualProbeDialogDescription": "PROBE_CALIBRATEまたはZ_ENDSTOP_CALIBRATEのヘルパーダイアログを表示します。",
             "NavigationStyle": "ナビゲーションのスタイル",
             "NavigationStyleDescription": "ナビゲーションの外観を変更",
             "NavigationStyleIconsAndText": "アイコン + テキスト",
@@ -1033,7 +1060,10 @@
             "PowerDeviceName": "プリンター電源機器",
             "PowerDeviceNameDescription": "プリンターの電源投入に使用するMoonrakerの電源デバイスを選択します。",
             "Primary": "一次",
-            "ShowWebcamInNavigation": "ナビゲーションにカメラを表示",
+            "ScrewsTiltAdjustDialog": "スクリューティルト調節ダイアログ",
+            "ScrewsTiltAdjustDialogDescription": "SCREWS_TILT_CALCULATEのヘルパーダイアログを表示します。",
+            "TempchartHeight": "温度グラフの高さ",
+            "TempchartHeightDescription": "ダッシュボードの温度グラフの高さを変更します。",
             "UiSettings": "UI設定"
         },
         "Update": "更新",
@@ -1054,6 +1084,7 @@
             "IconPrinter": "プリンター",
             "Ipstream": "IPカメラ",
             "Hlsstream": "HLS Stream",
+            "WebrtcJanus": "WebRTC (janus-gateway)",
             "Mjpegstreamer": "MJPEG-Streamer",
             "MjpegstreamerAdaptive": "Adaptive MJPEG-Streamer (試験的)",
             "Name": "名前",
@@ -1069,14 +1100,16 @@
             "Uv4lMjpeg": "UV4L-MJPEG",
             "Vertically": "垂直方向",
             "Webcams": "カメラ",
-            "WebrtcCameraStreamer": "WebRTC (camera-streamer)"
+            "WebrtcCameraStreamer": "WebRTC (camera-streamer)",
+            "WebrtcMediaMTX": "WebRTC (MediaMTX / rtsp-simple-server)"
         }
     },
     "ScrewsTiltAdjust": {
         "Accept": "確認",
         "Base": "ベース",
         "ErrorText": "プロービング過程で、問題が生じました。",
-        "Headline": "スクリュー傾斜調整"
+        "Headline": "スクリュー傾斜調整",
+        "Retry": "再試行"
     },
     "Timelapse": {
         "AllFiles": "すべてのファイル",
@@ -1089,6 +1122,7 @@
         "DeleteDirectory": "ディレクトリの削除",
         "DeleteDirectoryQuestion": "ディレクトリ\"{name}\"と中に含まれるすべてのファイルが削除されます。よろしいですか？",
         "DeleteSelectedQuestion": "選択された{count}個のファイルが削除されます。よろしいですか？",
+        "DeleteSingleFileQuestion": "\"{name}\"を削除します。よろしいですか？",
         "Download": "ダウンロード",
         "DuplicateLastframe": "最終フレームの複製",
         "Empty": "完成したタイムラプスは見つかりませんでした。",
